@@ -11,7 +11,6 @@ while getopts ":f:d:" o; do
             ;;
         d)
             dryRun=${OPTARG}
-            ((dryRun == true || s == false)) || usage
             ;;
         *)
             usage
